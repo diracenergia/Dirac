@@ -22,6 +22,21 @@
     footer { background-color: #003366; color: #fff; padding: 2rem 1rem; text-align: center; }
     .card-beneficio { transition: all 0.3s ease; background-color: #ffffff; }
     .card-beneficio:hover { background-color: #e9f7ef; transform: translateY(-5px); box-shadow: 0 6px 18px rgba(0,0,0,0.1); }
+  
+  
+  .panel-box {
+  transition: transform 0.2s ease;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+.panel-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+.bg-light {
+  background-color: #f6f6f6 !important;
+}
+
   </style>
 </head>
 <body>
@@ -87,51 +102,86 @@
     </div>
   </div>
 
-  <!-- Paneles destacados -->
-<section class="section text-center bg-white py-5" id="paneles">
+<!-- Paneles destacados con SVG personalizados -->
+<section class="section bg-light py-5" id="paneles">
   <div class="container">
-    <h2 class="mb-3 display-6">Instalación de Paneles Solares</h2>
-    <p class="mb-5 text-muted">Reduce tus gastos de energía y obtené un atractivo retorno de inversión a lo largo del tiempo.</p>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="p-4 rounded shadow-sm h-100 card-beneficio">
-          <div class="mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-lightbulb text-success" viewBox="0 0 16 16">
-              <path d="M2 6a6 6 0 1 1 12 0c0 2.082-1.5 3.9-2.998 4.42-.245.085-.502.18-.742.273a1.007 1.007 0 0 0-.632.927v.38a.5.5 0 0 1-.5.5H7.5a.5.5 0 0 1-.5-.5v-.38a1.007 1.007 0 0 0-.632-.927 11.567 11.567 0 0 0-.742-.273C3.5 9.9 2 8.082 2 6z"/>
-              <path d="M6.5 14a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-.5z"/>
+    <h2 class="mb-5 text-center display-6">Somos una empresa de servicios eléctricos dedicada a brindar soluciones en:</h2>
+    <div class="row g-4">
+
+      <!-- INGENIERÍA -->
+      <div class="col-md-4">
+        <div class="panel-box h-100 p-4 shadow-sm bg-white rounded-4">
+          <div class="text-center mb-3">
+            <!-- Icono tipo velocímetro con rayos -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M5 13a7 7 0 1 1 14 0" stroke="#28a745" stroke-width="2"/>
+              <path d="M12 13l3-3" stroke="#28a745" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 4l1.5-2M12 4l1.5-2M16 4l1.5-2" stroke="#28a745" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h5 class="fw-bold">Energía limpia, de bajo costo</h5>
-          <p class="text-muted">Transformamos el sol en electricidad, sin emisiones. Reducí tus costos con soluciones ecoamigables.</p>
+          <h5 class="fw-bold text-center">INGENIERÍA</h5>
+          <p class="text-muted text-center">Proyectos de Ingeniería</p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Gestión de la Energía</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Proyectos energéticos renovables</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Redacción de informes certificados</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Planos Eléctricos</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Analizador de Rigidez Dieléctrica</li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="p-4 rounded shadow-sm h-100 card-beneficio">
-          <div class="mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-shield-check text-success" viewBox="0 0 16 16">
-              <path d="M5.5 8.5a.5.5 0 0 1 .707 0L8 10.293l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 0-.708z"/>
-              <path d="M8 0c-.176 0-.346.01-.512.03a8.932 8.932 0 0 0-2.26.55c-.532.22-1.015.51-1.428.848-.413.338-.78.744-1.077 1.204a6.92 6.92 0 0 0-.828 2.16C1.308 5.799 1 6.866 1 8c0 1.926.502 3.355 1.362 4.43.86 1.075 2.115 1.947 3.675 2.47.154.053.308.1.46.14.232.062.473.12.717.171.315.067.633.123.954.167A8.99 8.99 0 0 0 8 16a8.99 8.99 0 0 0 1.832-.122 10.972 10.972 0 0 0 .954-.167c.244-.05.485-.109.717-.171.152-.04.306-.087.46-.14 1.56-.523 2.816-1.395 3.675-2.47C14.498 11.355 15 9.926 15 8c0-1.134-.308-2.201-.827-3.008a6.92 6.92 0 0 0-.828-2.16 5.971 5.971 0 0 0-1.077-1.204 5.978 5.978 0 0 0-1.428-.848 8.932 8.932 0 0 0-2.26-.55A7.758 7.758 0 0 0 8 0z"/>
+
+      <!-- ENERGÍA RENOVABLE -->
+      <div class="col-md-4">
+        <div class="panel-box h-100 p-4 shadow-sm bg-white rounded-4">
+          <div class="text-center mb-3">
+            <!-- Icono batería y panel -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="2" width="10" height="20" rx="2" stroke="#28a745" stroke-width="2"/>
+              <path d="M14 7h6M14 11h6M14 15h6" stroke="#28a745" stroke-width="2" stroke-linecap="round"/>
+              <path d="M14 3h2" stroke="#28a745" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h5 class="fw-bold">Producción de energía garantizada</h5>
-          <p class="text-muted">Paneles solares de última tecnología: máxima eficiencia y durabilidad garantizadas.</p>
+          <h5 class="fw-bold text-center">ENERGÍA RENOVABLE</h5>
+          <p class="text-muted text-center">Proyección, puesta en servicio</p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sistemas On Grid</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sistemas Off Grid</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Luminarias LED</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Agua Sanitaria Solar (ACS)</li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="p-4 rounded shadow-sm h-100 card-beneficio">
-          <div class="mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-person-check text-success" viewBox="0 0 16 16">
-              <path d="M15.854 5.146a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708l1.146 1.147 3.146-3.147a.5.5 0 0 1 .708 0z"/>
-              <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm6-5a5 5 0 1 0-4.546-2.914A5 5 0 0 0 7 9z"/>
+
+      <!-- ELECTRICIDAD INDUSTRIAL -->
+      <div class="col-md-4">
+        <div class="panel-box h-100 p-4 shadow-sm bg-white rounded-4">
+          <div class="text-center mb-3">
+            <!-- Icono triángulo con rayo -->
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L22 20H2L12 2Z" fill="#ffc107" stroke="#000" stroke-width="1.5"/>
+              <path d="M12 8v4l2 2m-2-2-2 2" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h5 class="fw-bold">Generá tu propia energía</h5>
-          <p class="text-muted">Controlá tu energía, reducí la dependencia de la red y experimentá independencia con beneficios para tu bolsillo.</p>
+          <h5 class="fw-bold text-center">ELECTRICIDAD INDUSTRIAL</h5>
+          <p class="text-muted text-center">Mantenimiento correctivo, preventivo y predictivo</p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Elaboración de Tableros Eléctricos</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Detección y solución de fallas</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Medición de Aislación (cables, motores, trafos)</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Medición de puesta a tierra (PAT)</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Botellas de conexión BT/MT</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Inspección Visual Termográfica</li>
+          </ul>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
+
 
 <!-- Calculadora llamada -->
 <section class="py-5 position-relative" style="background-color: #8ed137; overflow: visible;">
@@ -213,6 +263,21 @@
       margin-bottom: 1rem;
     }
   }
+  .img-operativa {
+  max-width: 100%;
+  max-height: 450px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .img-operativa {
+    max-height: 300px;
+  }
+}
+
+
 </style>
 
 <section class="section bg-white py-5">
@@ -317,27 +382,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<section class="section bg-white py-5" id="moviles-electricos">
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Imagen -->
-      <div class="col-lg-6 text-center mb-4 mb-lg-0">
-        <img src="img/moviles_electricos_dirac.webp" alt="Móviles eléctricos DIRAC" class="img-fluid rounded shadow">
-      </div>
 
-      <!-- Texto -->
-      <div class="col-lg-6">
-        <h2 class="display-6 mb-3">Movilidad eléctrica adaptada a la operación</h2>
-        <p class="text-muted lead mb-4">Contamos con unidades eléctricas equipadas para tareas en campo, ideales para entornos industriales, institucionales y urbanos. Nuestra propuesta apunta a un transporte eficiente, silencioso y libre de emisiones.</p>
-        <ul class="list-unstyled text-muted">
-          <li class="mb-2"><i class="bi bi-battery-charging text-success me-2"></i>Autonomía optimizada para recorridos técnicos</li>
-          <li class="mb-2"><i class="bi bi-hammer text-primary me-2"></i>Equipadas con herramientas e instrumental</li>
-          <li class="mb-2"><i class="bi bi-emoji-sunglasses-fill text-warning me-2"></i>Comodidad y presencia para uso institucional</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- BASE OPERATIVA -->
@@ -348,18 +393,77 @@
     <div class="row align-items-center">
       <!-- Texto -->
       <div class="col-lg-6">
-        <h2 class="display-6 mb-3">Base operativa en Rincón de los Sauces</h2>
-        <p class="text-muted lead mb-4">Desde nuestra base ubicada en el corazón de Vaca Muerta, ofrecemos soluciones inmediatas para operaciones eléctricas, técnicas y de instrumentación. Nuestra cercanía a los principales yacimientos permite una logística eficiente y respuesta en tiempo real.</p>
+        <h2 class="display-6 mb-3">Servicios sobre Transformadores en Campo</h2>
+<p class="text-muted lead mb-4">Realizamos tareas integrales de mantenimiento, diagnóstico y puesta en servicio de transformadores de distribución y potencia. Contamos con herramientas y personal especializado para intervenir en forma segura y eficiente en instalaciones energizadas o fuera de servicio.</p>
+<ul class="list-unstyled text-muted">
+  <li class="mb-2"><i class="bi bi-droplet-half text-primary me-2"></i>Limpieza externa e inspección visual preventiva</li>
+  <li class="mb-2"><i class="bi bi-exclamation-octagon text-danger me-2"></i>Consignación segura y apertura del equipo</li>
+  <li class="mb-2"><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Medición de corriente con pinza cofimétrica</li>
+  <li class="mb-2"><i class="bi bi-bar-chart-fill text-success me-2"></i>Relevamiento de potencia reactiva y verificación de banco de capacitores</li>
+  <li class="mb-2"><i class="bi bi-clipboard2-pulse text-secondary me-2"></i>Informe técnico con recomendaciones correctivas</li>
+</ul>
+
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-lg-6 text-center">
+        <img src="img/mantenimiento.png" alt="Base operativa en Rincón de los Sauces" class="img-fluid rounded shadow img-operativa">
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-white py-5" id="energia-solar">
+  <div class="container">
+    <div class="row align-items-center flex-md-row-reverse">
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="display-6 mb-3">Soluciones Solares a Medida</h2>
+        <p class="text-muted lead mb-4">
+          Brindamos servicios integrales de planificación, dimensionamiento e instalación de sistemas de energía solar fotovoltaica, tanto fijos como móviles. Diseñamos soluciones eficientes y confiables adaptadas a viviendas, instalaciones industriales o vehículos autónomos.
+        </p>
         <ul class="list-unstyled text-muted">
-          <li class="mb-2"><i class="bi bi-geo-alt-fill text-success me-2"></i>Ubicación estratégica en zona industrial</li>
-          <li class="mb-2"><i class="bi bi-truck-front-fill text-primary me-2"></i>Flota disponible las 24 hs</li>
-          <li class="mb-2"><i class="bi bi-tools text-danger me-2"></i>Infraestructura con equipamiento técnico</li>
+          <li class="mb-2"><i class="bi bi-sun-fill text-warning me-2"></i>Instalación de paneles solares fijos y móviles</li>
+          <li class="mb-2"><i class="bi bi-battery-charging text-success me-2"></i>Dimensionamiento e instalación de bancos de baterías</li>
+          <li class="mb-2"><i class="bi bi-lightning text-primary me-2"></i>Asesoramiento y montaje de inversores de corriente</li>
+          <li class="mb-2"><i class="bi bi-tools text-danger me-2"></i>Calculo de autonomía energética según demanda real</li>
+          <li class="mb-2"><i class="bi bi-graph-up-arrow text-secondary me-2"></i>Optimización del rendimiento solar en campo</li>
         </ul>
       </div>
 
       <!-- Imagen -->
       <div class="col-lg-6 text-center">
-        <img src="img/base_operativa_rincon.webp" alt="Base operativa en Rincón de los Sauces" class="img-fluid rounded shadow">
+        <img src="img/energia-solar-vehiculo.jpg" alt="Instalación de panel solar en vehículo" class="img-fluid rounded shadow img-operativa">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section bg-white py-5" id="analisis-red">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto -->
+      <div class="col-lg-6">
+        <h2 class="display-6 mb-3">Tecnología de precisión para diagnóstico eléctrico</h2>
+        <p class="text-muted lead mb-4">
+          Contamos con instrumentos de última generación para realizar estudios detallados sobre la red eléctrica, garantizando el control de calidad, el diagnóstico de fallas y la seguridad operativa de las instalaciones.
+        </p>
+        <ul class="list-unstyled text-muted">
+          <li class="mb-2"><i class="bi bi-activity text-primary me-2"></i>Medición de calidad de energía (EN50160)</li>
+          <li class="mb-2"><i class="bi bi-graph-up text-success me-2"></i>Registro de tensión, corriente, armónicos y factor de potencia</li>
+          <li class="mb-2"><i class="bi bi-lightning-fill text-warning me-2"></i>Detección de transitorios y desequilibrios de tensión</li>
+          <li class="mb-2"><i class="bi bi-cpu text-secondary me-2"></i>Osciloscopio trifásico de alta resolución</li>
+          <li class="mb-2"><i class="bi bi-clock-history text-danger me-2"></i>Registro continuo con memoria interna (data logger)</li>
+          <li class="mb-2"><i class="bi bi-tools text-dark me-2"></i>Equipamiento completo: pinzas amperométricas, multímetros TRMS, detectores de fase, medidores de aislación y puesta a tierra</li>
+        </ul>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-lg-6 text-center">
+        <img src="img/analizador-fluke.jpg" alt="Análisis de red con tecnología Fluke" class="img-fluid rounded shadow img-operativa">
       </div>
     </div>
   </div>
